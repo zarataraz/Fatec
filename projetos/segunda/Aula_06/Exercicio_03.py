@@ -12,16 +12,14 @@ litro = round((area_total / 3) + 0.5)
 
 
 
-if tamanho_lata > 3 < 1:
+if tamanho_lata > 3 or tamanho_lata < 1:
     print(" o tamanho indicado é invalido selecione um valor valido ( 1 ,2 ou 3)")
 else:
     print(f"o tamanho total do comodo é de {area_total}m²")
     if tamanho_lata == 1:
-        print(f" serão nescessarios {area_total / 3} litros de tinta totalizando a compra de {litro} para pintar o comodo")
+        print(f" serão nescessarios {area_total / 3} litros de tinta totalizando a compra de {litro}para pintar o comodo")
     else:
         if tamanho_lata == 2:
             print(f" serão nescessarios {area_total / 3} litros de tinta totalizando a compra de  {galao} galões")
         else:
             print(f" serão nescessarios {area_total / 3} litros de tinta totalizando a compra de {lata} latas")
-
-
