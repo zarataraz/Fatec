@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Completo</title>
+</head>
+<h2>Roupas XIQUE XIQUE</h2>
+<h3> Cadastro </h3>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome"> Nome</label>
+            <input type="text" id="nome" name=NomeCliente maxlength="30" minlength="10" size="30" required autofocus>
+
+            <br>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" maxlength="12" placeholder="coloca senha aqui kralho">
+            <br>
+            <label for="estado civil">estado civil</label><br>
+            <input type="radio" name="estado civil" value="solteiro" /> solteiro
+            <input type="radio" name="estado civil" value="Muito solteiro" /> Muito solteiro
+            <input type="radio" name="estado civil" value="Extremamente solteiro" /> casado
+            <br>
+            <label for="cor preferida">cor preferida</label>
+            <input type="color" name="cor preferida" id="cor preferida">
+        </fieldset>
+        <fieldset>
+            <legend> Dados de Cobrança</legend>
+            <label for="cidade">cidade</label>
+            <input type="text" name="cidade" id="cidade" value="Votorantim">
+
+            <label for="uf">cidade</label>
+            <select name="uf" id="uf">
+                <optgroup label="Região norte">
+                    <option value="Amazonas">AM</option>
+                    <option value="Acre">AC</option>
+                </optgroup>
+                <optgroup label="Região sul">
+                    <option value="Santa Catarina">SC</option>
+                    <option value="Chama no zap">RS</option>
+                </optgroup>
+            </select>
+            <br>
+            <input type="checkbox" name="envio" id="envio" checked>
+            <label for="envio">express ?</label>
+            <br>
+            <label for="grau de satisfação">grau de satisfação</label>
+            <input type="range" id="grau de satisfação" name="grau de satisfação" min="1" max="10" step="1" value="5">
+        </fieldset>
+        <button>Cadastrar</button>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
