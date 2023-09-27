@@ -9,5 +9,24 @@
     <h2>calculo de numeros</h2>
     <label id ="ln1">numero 1</label>
     <input type="text" name="vn1" id="n1">
+    <button id="button" value = "somar" onclick ="somar()"> botão</button>
+    <button id = "butão" value = "mult" onclick="multiplica()"> multiplica</button>
+
+    <script>
+        function somar(){
+        let x = document.getElementById('n1').value;
+                x=Number(x) + 20;
+        console.log("valor de x" + x);
+        alert(x);
+        }
+
+
+        function multiplica(){
+        let x = document.getElementById('n1').value;
+        x=Number(x) * 2;
+        console.log("valor de x" * x)
+        alert(x);
+        }
+    </script>
 </body>
 </html>
