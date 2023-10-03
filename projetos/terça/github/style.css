@@ -1,0 +1,125 @@
+
+#body{
+    max-width: 1280px;
+}
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.prin1{
+    display: inline-flex;
+}
+.titulo {
+    color: orange;
+    font-size: medium;
+    margin-right: 10px;
+    margin: 0px;
+    font-size: 40px;
+}
+
+.avalia{
+    margin-top: 15px;
+    font-size: 30px;
+}
+    
+
+.avaliacao {
+    margin: 0px;
+    display: inline-flex;
+}
+
+.star-icon {
+    list-style-type: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.star-icon::before {
+    content: "\2605";
+}
+
+.star-icon.ativo ~ .star-icon::before {
+    content: "\2606";
+}
+
+.avaliacao:hover .star-icon::before {
+    content: "\2605";
+}
+
+.star-icon:hover ~ .star-icon::before {
+    content: "\2606";
+}
+
+.imag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.elemento{
+    height: 500px;
+}
+
+.ingredientes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MASSA, .empana, .recheio{
+    background-color:gray;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    margin-left: 100px;
+
+}
+.espaço{
+    background-color: gray;
+    width: 80%;
+    margin-left: 100px;
+}
+.ing{
+    color: orange;
+    display: flex;
+    margin-top: 5px;
+}
+.elemento1{
+    margin-right: 10px;
+    
+}
+
+#tr, td, table{
+    font-size: 29px;
+    height: 60px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.prink{
+    border-right: 2px solid rgb(65, 64, 64);
+}
+.dados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    margin-top: 3px;
+    width: 80%;
+    margin-left: 100px;
+    margin-bottom: 3px;
+}
+.list{
+    margin-left: 100px;
+    font-size: larger;
+}
+.baixo{
+    color: orange;
+}

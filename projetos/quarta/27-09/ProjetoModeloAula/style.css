@@ -1,0 +1,63 @@
+h2{
+    font-family: "Roboto Slab", 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-left: 10px;
+    display: inline;
+    background-color: black;    
+    color: blue;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1dvh solid blueviolet;
+}
+
+nav ul a{
+    text-decoration: none;
+}
+nav ul{
+    position: relative;
+    text-align: center;
+}
+nav ul li:hover{
+    background-color: red;
+    color: white;
+    border: 2dvh solid black;
+}
+
+
+section{
+    
+    background-color: beige;
+    border: 10px solid cornsilk;
+    border-radius: 10px;
+    margin-bottom:20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+video{
+    width: 40%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    height: 200px;
+
+}
+audio{
+    margin: 10px auto;
+    display: block;
+}
+
+footer section ul li{
+    list-style-type:none;
+    flex-direction: column;
+    display: block;
+}
+footer section ul{
+    display: inline-flex
+}
+
