@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+
+<body>
+
+    <input type="text" placeholder="insira o salário" id="salario">
+    <input type="text" placeholder="insira o percentual a ser aumentado" id="porcentagem">
+    <p id=resultado></p>
+    <input type="button" value="Calcular" id="btnCalcular" onclick="calcular()">
+
+    <script>
+        function calcular() {
+            let salario = 0.00;
+            salario = Number(document.getElementById("salario").value);
+            let porcentagem = 0.00;
+            porcentagem = Number(document.getElementById("porcentagem").value)
+
+            let novoSalario = (salario * porcentagem / 100) + salario;
+
+            document.getElementById('resultado').innerText = `O novo salario é R$${novoSalario.toFixed(2)}`;
+
+        }
+    </script>
+</body>
+
+</html>
