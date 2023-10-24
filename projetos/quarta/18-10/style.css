@@ -1,0 +1,11 @@
+main{
+    display:flex;
+    flex-direction: row;
+}
+
+section{
+    border:2px solid; 
+    display: flex;
+    flex-direction: row;
+  
+}
