@@ -5,7 +5,7 @@ let coisas =0;
 function CalcularTotalViagem()
 {
     ValorAdicionais = 0;
-    coisas = 0
+    coisas = 0;
     CalcularPacotes()
     CalcularAdicionais()
    document.getElementById("caixona").innerHTML = `${ValorAdicionais}`;
@@ -22,7 +22,6 @@ function CalcularAdicionais(){
     {
         if(adicionais[i].checked == true){
             ValorAdicionais += Number(adicionais[i].value);
-            console.log(adicionais[i].id)
            coisas += ` /${adicionais[i].id}`
         }
     }
